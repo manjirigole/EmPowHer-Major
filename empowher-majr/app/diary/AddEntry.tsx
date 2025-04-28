@@ -73,7 +73,7 @@ const AddEntry = () => {
       const entryId = new Date().toISOString();
 
       //call flask api for sentiment analysis
-      const response = await fetch("http://192.168.29.237:5001/predict", {
+      const response = await fetch("IP_ADDRESS/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: entryText }),
