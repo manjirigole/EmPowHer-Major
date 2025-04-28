@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = " http://192.168.29.237/recommend"; // Replace with your actual Flask server IP
+const API_URL = "IP_ADDRESS/recommend"; // Replace with your actual Flask server IP
 
 export const fetchRecommendations = async (text) => {
   try {
